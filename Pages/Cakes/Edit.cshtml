@@ -1,0 +1,28 @@
+@page "/cake/edit"
+@model Dot6.Razor.Crud.Demo.Pages.Cakes.EditModel
+
+<div class="container">
+    <div class="row ">
+        <div class="col-md-6 offset-md-3">
+            <form method="POST">
+                <legend>Update A New Cake</legend>
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Name</label>
+                    <input asp-for="CakeVm.Name" type="text" class="form-control" id="txtName" />
+                </div>
+                <div class="mb-3">
+                    <label for="txtCost" class="form-label">Cost</label>
+                    <input asp-for="CakeVm.Price" type="text" class="form-control" id="txtCost" />
+                </div>
+                <div class="mb-3">
+                    <label for="txtDescription" class="form-label">Cost</label>
+                    <textarea asp-for="CakeVm.Description" type="text" class="form-control"
+                        id="txtDescription"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</div>
